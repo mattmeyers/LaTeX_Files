@@ -1,0 +1,50 @@
+% Main macros file
+% Last updated 3/21/17
+% File location: C:\Users\Matthew\AppData\Local\MiKTeX\2.9\tex\latex\local
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{MainStyle}
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+
+% Setting Margins
+\setlength{\oddsidemargin}{-0.25in} \setlength{\topmargin}{0.25in}
+\setlength{\headheight}{0.0in} \setlength{\headsep}{0.0in}
+%\setlength{\footheight}{0.0in}
+\setlength{\textwidth}{6.6in} \setlength{\textheight}{8.9in}
+
+% Defining theorem styles
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{claim}{Claim}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+% Macros
+\def\R{\mathbb{R}} % the naturals
+\def\Z{\mathbb{Z}} % the integers
+\def\N{\mathbb{N}}  % the rationals
+\def\Q{\mathbb{Q}} % the reals
+\def\C{\mathbb{C}} % the complex numbers
+
+\def\dim{\rm dim}
+\def\Span{\rm Span}
+\def\range{\rm range}
+\def\Im{\rm Im}
+\def\gcd{\rm gcd}
+\def\lcm{\rm lcm}
+
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\newcommand\abs[1]{\left|#1\right|}
+
+
+
+\endinput
