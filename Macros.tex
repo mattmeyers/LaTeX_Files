@@ -1,9 +1,12 @@
 \usepackage{amsmath,amssymb,amsthm,physics,tikz,mathrsfs,faktor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usepackage{graphicx,epstopdf}
 \usepackage{chngcntr,setspace}
 \usepackage[margin=1in]{geometry}
+\usetikzlibrary{trees,shapes.geometric}
 
-\usepackage[]{hyperref}
+%\usepackage[]{hyperref}
 
 %\setlength{\oddsidemargin}{-0.25in} \setlength{\topmargin}{0.25in}
 %\setlength{\headheight}{0.0in} \setlength{\headsep}{0.0in}
@@ -15,15 +18,15 @@
 \counterwithin*{equation}{subsection}
 
 \theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem*{theorem}{Theorem}
 \newtheorem{corollary}{Corollary}[subsection]
 \newtheorem{conj}{Conjecture}[subsection]
 \newtheorem*{lem}{Lemma}
-\newtheorem{prop}{Proposition}[subsection]
+\newtheorem*{prop}{Proposition}
 \newtheorem*{claim}{Claim}
 
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[subsection]
+\newtheorem*{definition}{Definition}
 
 \theoremstyle{remark}
 \newtheorem{remark}{Remark}[subsection]
@@ -32,6 +35,8 @@
 \newtheorem*{counterexample}{Counterexample}
 
 \def\nsg{\triangleleft}
+\newcommand{\bigo}[1]{\mathcal{O}(#1)}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 \def\R{\mathbb{R}}
 \def\Z{\mathbb{Z}}
@@ -65,3 +70,30 @@
 \def\sX{\mathscr{X}}
 \def\sY{\mathscr{Y}}
 \def\sZ{\mathscr{Z}}
+
+\def\cA{\mathcal{A}}
+\def\cB{\mathcal{B}}
+\def\cC{\mathcal{C}}
+\def\cD{\mathcal{D}}
+\def\cE{\mathcal{E}}
+\def\cF{\mathcal{F}}
+\def\cG{\mathcal{G}}
+\def\cH{\mathcal{H}}
+\def\cI{\mathcal{I}}
+\def\cJ{\mathcal{J}}
+\def\cK{\mathcal{K}}
+\def\cL{\mathcal{L}}
+\def\cM{\mathcal{M}}
+\def\cN{\mathcal{N}}
+\def\cO{\mathcal{O}}
+\def\cP{\mathcal{P}}
+\def\cQ{\mathcal{Q}}
+\def\cR{\mathcal{R}}
+\def\cS{\mathcal{S}}
+\def\cT{\mathcal{T}}
+\def\cU{\mathcal{U}}
+\def\cV{\mathcal{V}}
+\def\cW{\mathcal{W}}
+\def\cX{\mathcal{X}}
+\def\cY{\mathcal{Y}}
+\def\cZ{\mathcal{Z}}
